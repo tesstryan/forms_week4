@@ -1,18 +1,26 @@
-<h1>Sign In</h1>
+<section class="user-form">
 
-<%= form_tag(users_url, method: 'post') do %>
+    <img src="https://s3.amazonaws.com/cbgriffin/banner.png" class="banner">
 
-  <div>
-    <%= label_tag :email %><br />
-    <%= text_field_tag :email %>
-  </div>
+  <h2>Sign In</h2>
 
-  <div>
-    <%= label_tag :password %><br />
-    <%= text_field_tag :password %>
-  </div>
+  <%= form_tag(users_url, method: 'post') do %>
 
-  <div>
-    <%= submit_tag "Sign In" %>
-  </div>
-<% end %>
+    <div>
+      <%= label_tag :email %><br />
+      <%= text_field_tag :email %>
+    </div>
+
+    <div>
+      <%= label_tag :password %><br />
+      <%= text_field_tag :password %>
+    </div>
+
+    <div>
+      <%= submit_tag "Sign In" %>
+    </div>
+  <% end %>
+
+
+</section>
+
