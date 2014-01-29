@@ -17,6 +17,51 @@ $main-red: #c0392b;
     max-width: 960px;
 }
 
+%formpanel {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #ecf0f1;
+  margin-top: 50px;
+  padding: 20px 40px;
+  text-align: center;
+
+  h2 {
+    font-size: 42px;
+    position: absolute;
+    top: 120px;
+    right: 60px;
+  }
+
+  input {
+    background-color: #ecf0f1;
+    width: 75%;
+    height: 40px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border: 1px solid black;
+  }
+
+  img {
+    &.banner {
+      max-width: 125px;
+      position: absolute;
+      top: -60px;
+      left: 40px;
+    }
+  }
+
+  form {
+    margin-top: 175px;
+
+    div {
+      margin: 0 auto;
+    }
+  }
+
+
+}
+
 // Global tags
 
 body {
@@ -31,3 +76,16 @@ a {
 }
 
 // Everything else
+
+
+section {
+
+  position: relative;
+
+  &.user-form {
+    @extend %formpanel;
+  }
+
+
+}
+
