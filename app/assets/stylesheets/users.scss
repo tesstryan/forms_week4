@@ -3,6 +3,9 @@
 
 // Global templates
 
+
+$main-red: #c0392b;
+
 %group:after {
     display: table;
     clear: both;
@@ -19,6 +22,7 @@
 body {
 	@extend %container;
 	font-family: 'Open Sans Condensed', sans-serif;
+  background-color: $main-red;
 
 }
 
