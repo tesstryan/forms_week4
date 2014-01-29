@@ -67,6 +67,18 @@ $main-purple: #2E3666;
     div {
       margin: 0 auto;
     }
+
+    p {
+
+      &.warning {
+        text-align: left;
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        color: $main-red;
+        display: none;
+      }
+    }
   }
 
 

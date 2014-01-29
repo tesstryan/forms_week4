@@ -5,43 +5,37 @@
  <%= image_tag 'banner_sign_up.png', :class => "reset_banner" %>
 
   <%= form_tag(users_url, method: 'post', multipart: true) do %>
-    <div>
+
       <%= text_field_tag :first_name, nil, placeholder: "First name" %>
-    </div>
 
-    <div>
       <%= text_field_tag :last_name, nil, placeholder: "Last name" %>
-    </div>
 
-    <div>
-      <%= text_field_tag :email, nil, placeholder: "Email address" %>
-    </div>
+      <%= text_field_tag :email, nil, placeholder: "Email address", class: "field-check" %>
 
-    <div>
-      <%= text_field_tag :username, nil, placeholder: "Username" %>
-    </div>
+        <p class="warning">*Your e-mail doesnt look right...</p>
 
-    <div>
-      <%= text_field_tag :password, nil, placeholder: "Password" %>
-    </div>
+      <%= text_field_tag :username, nil, placeholder: "Username", class: "field-check" %>
 
-    <div>
+        <p class="warning">*This is not a valid username...</p>
+
+
+      <%= text_field_tag :password, nil, placeholder: "Password", class: "field-check" %>
+
+        <p class="warning">*This is not a valid password...</p>
+
+
       <%= text_field_tag :password_confirmation, nil, placeholder: "Confirm your password" %>
-    </div>
 
-    <div>
+
       <%= label_tag :birthday %><br />
       <%= text_field_tag :birthday %>
-    </div>
 
-    <div>
+
       <%= label_tag :avatar %><br />
       <%= file_field_tag :avatar %>
-    </div>
 
-    <div>
+
       <%= submit_tag "Create User" %>
-    </div>
   <% end %>
 
 </section>

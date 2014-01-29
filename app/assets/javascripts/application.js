@@ -14,3 +14,18 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(function() {
+
+  $("input.field-check").focus(function() {
+    $(this).next( "p.warning" ).css( "display", "block" );
+    $(this).css( "margin-bottom", "0px")
+  });
+
+  $("input.field-check").blur(function() {
+    $(this).next( "p.warning" ).css( "display", "none" );
+    $(this).css( "margin-bottom", "10px")
+  });
+
+});
+
