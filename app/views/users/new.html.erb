@@ -1,0 +1,47 @@
+<h1>Sign Up</h1>
+
+<%= form_tag(users_url, method: 'post', multipart: true) do %>
+  <div>
+    <%= label_tag :first_name %><br />
+    <%= text_field_tag :first_name %>
+  </div>
+
+  <div>
+    <%= label_tag :last_name %><br />
+    <%= text_field_tag :last_name %>
+  </div>
+
+  <div>
+    <%= label_tag :email %><br />
+    <%= text_field_tag :email %>
+  </div>
+
+  <div>
+    <%= label_tag :username %><br />
+    <%= text_field_tag :username %>
+  </div>
+
+  <div>
+    <%= label_tag :password %><br />
+    <%= text_field_tag :password %>
+  </div>
+
+  <div>
+    <%= label_tag :password_confirmation %><br />
+    <%= text_field_tag :password_confirmation %>
+  </div>
+
+  <div>
+    <%= label_tag :birthday %><br />
+    <%= text_field_tag :birthday %>
+  </div>
+
+  <div>
+    <%= label_tag :avatar %><br />
+    <%= file_field_tag :avatar %>
+  </div>
+
+  <div>
+    <%= submit_tag "Create User" %>
+  </div>
+<% end %>

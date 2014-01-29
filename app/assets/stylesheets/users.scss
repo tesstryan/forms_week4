@@ -1,0 +1,29 @@
+@import "library";
+@import "reset";
+
+// Global templates
+
+%group:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+%container {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+// Global tags
+
+body {
+	@extend %container;
+	font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+a {
+    color: #800000;
+}
+
+// Everything else
