@@ -1,0 +1,18 @@
+<section class="user-form">
+
+  <!--   <img src="/assets/images/banner_reset.png" class="banner"> -->
+  <%= image_tag 'banner_reset.png', :class => "reset_banner" %>
+
+  <%= form_tag(users_url, method: 'post') do %>
+
+    <div>
+      <%= text_field_tag :new_password, nil, :placeholder => "New Password" %>
+    </div>
+
+    <div>
+      <%= submit_tag "Sign In" %>
+    </div>
+  <% end %>
+
+
+</section>
