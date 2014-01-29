@@ -5,6 +5,7 @@
 
 
 $main-red: #c0392b;
+$main-purple: #2E3666;
 
 %group:after {
     display: table;
@@ -51,6 +52,13 @@ $main-red: #c0392b;
     }
   }
 
+  .reset_banner {
+      max-width: 125px;
+      position: absolute;
+      top: -17px;
+      left: 40px;
+  }
+
   form {
     margin-top: 175px;
 
@@ -67,7 +75,7 @@ $main-red: #c0392b;
 body {
 	@extend %container;
 	font-family: 'Open Sans Condensed', sans-serif;
-  background-color: $main-red;
+  // $main-red: #c0392b;
 
 }
 
