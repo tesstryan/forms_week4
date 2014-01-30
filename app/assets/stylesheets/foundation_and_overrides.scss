@@ -52,7 +52,7 @@ $body-font-style: normal;
 // We use these as default colors throughout
 // $primary-color: #008CBA;
 // $secondary-color: #e7e7e7;
-$alert-color: lighten(#2E3666, 15%);
+$alert-color: lighten(#2E3666, 7%);
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
@@ -132,8 +132,8 @@ $accordion-navigation-font-family: $body-font-family;
 
 // We use these to control text style.
 // $alert-font-weight: normal;
-// $alert-font-size: rem-calc(13);
-// $alert-font-color: #fff;
+// $alert-font-size: rem-calc(20);
+// $alert-font-color: #ccc;
 // $alert-font-color-alt: scale-color($secondary-color, $lightness: -66%);
 
 // We use this for close hover effect.
