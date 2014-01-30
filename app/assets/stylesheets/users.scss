@@ -35,14 +35,14 @@ $main-purple: #2E3666;
   }
 
   input {
-    background-color: #ecf0f1;
-    width: 100%;
-    height: 40px;
+    // background-color: #ecf0f1;
+    // width: 100%;
+    // height: 40px;
     margin: 0 auto;
     margin-top: 2px;
     margin-bottom: 10px;
-    font-size: 18px;
-    border: 1px solid black;
+    font-size: 19px;
+    border: 1px solid gray;
     font-family: 'Open Sans Condensed', sans-serif;
     padding-left: 10px;
   }
@@ -68,22 +68,29 @@ $main-purple: #2E3666;
 
     .submit {
       background-color: $main-purple;
-      width: 35%;
+      width: 38%;
+      height: 40px;
       color: white;
-      margin-top: 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
       border: none;
 
     }
-
-    .avatar_label {
-      margin-left: -83%;
-      font-size: 18px;
-    }
-
-    .avatar {
-      border: none;
+    
+    .avatar_checkbox {
+      display: inline;
       width: 100%;
 
+      .avatar_label {
+        text-align: left;
+        font-size: 18px;
+        margin-left: 14%;
+      }
+      .avatar {
+        border: none;
+        margin-left: 14%;
+        // width: 100%;
+      }
     }
 
     .birthday {
@@ -95,6 +102,17 @@ $main-purple: #2E3666;
     div {
       margin: 0 auto;
       width: 75%;
+    }
+
+    .check_box {
+      width: 75%;
+      margin-top: 10px;
+
+      p{
+        display:inline;
+        margin-left: 5px;
+        font-size: 17px;
+      }
     }
 
     p {

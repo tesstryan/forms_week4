@@ -37,13 +37,16 @@
       <%= date_field_tag :birthday %>
     </div>
 
-    <div>
+    <div class="avatar_checkbox">
       <%= label_tag :avatar, nil, class: "avatar_label" %>
       <%= file_field_tag :avatar, class: "avatar" %>
     </div>
 
-    <%= check_box_tag 'accept', class: "check_box" %>Accept Terms
+    <div class="check_box">
+    <%= check_box_tag 'accept', class: "check_box" %><p>I agree to the <a href="#">Terms & Conditions</p></a>
+    </div>
    
+
 
     <%= submit_tag "Submit!", class: "submit" %>
 
