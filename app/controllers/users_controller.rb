@@ -18,7 +18,6 @@ class UsersController < ApplicationController
     @user.email = params[:email]
     @user.username = params[:username]
     @user.password = params[:password]
-    @user.password_confirmation = params[:password_confirmation]
     @user.birthday = params[:birthday]
     @user.avatar = params[:avatar]
 

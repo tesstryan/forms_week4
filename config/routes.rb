@@ -13,6 +13,7 @@ FormsWeek4::Application.routes.draw do
   get '/reset' => 'forms#reset'
   get '/forgot' => 'forms#forgot'
 
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
