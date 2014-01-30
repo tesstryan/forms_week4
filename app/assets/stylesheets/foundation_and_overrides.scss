@@ -132,7 +132,7 @@ $accordion-navigation-font-family: $body-font-family;
 
 // We use these to control text style.
 // $alert-font-weight: normal;
-// $alert-font-size: rem-calc(20);
+$alert-font-size: rem-calc(20);
 // $alert-font-color: #ccc;
 // $alert-font-color-alt: scale-color($secondary-color, $lightness: -66%);
 
@@ -410,9 +410,9 @@ $input-font-family: inherit;
 // We use these to style the error states for inputs and labels
 // $input-error-message-padding: rem-calc(6 9 9);
 // $input-error-message-top: -1px;
-// $input-error-message-font-size: rem-calc(12);
+$input-error-message-font-size: rem-calc(16);
 // $input-error-message-font-weight: normal;
-// $input-error-message-font-style: italic;
+$input-error-message-font-style: normal;
 // $input-error-message-font-color: #fff;
 // $input-error-message-font-color-alt: #333;
 
