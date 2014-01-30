@@ -1,5 +1,6 @@
 @import "library";
 @import "reset";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
 
 // Global templates
 
@@ -37,6 +38,7 @@ $main-purple: #2E3666;
     background-color: #ecf0f1;
     width: 75%;
     height: 40px;
+    margin: 0 auto;
     margin-top: 2px;
     margin-bottom: 10px;
     font-size: 18px;
@@ -62,10 +64,42 @@ $main-purple: #2E3666;
   }
 
   form {
-    margin-top: 175px;
+    margin-top: 140px;
+
+    .submit {
+      background-color: $main-purple;
+      width: 30%;
+      color: white;
+      margin-top: 10px;
+      border: none;
+
+    }
+
+    .avatar {
+      border: none;
+      width: 45%;
+      font-size: 17px;
+    }
+
+    .birthday {
+      margin-left: -60%;
+      font-size: 17px;
+    }
 
     div {
       margin: 0 auto;
+    }
+
+    p {
+
+      &.warning {
+        text-align: left;
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        color: $main-red;
+        display: none;
+      }
     }
   }
 
