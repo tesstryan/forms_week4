@@ -6,9 +6,13 @@
 
   <%= form_tag(users_url, method: 'post', multipart: true, data: {abide: true}) do %>
 
+      <div>
       <%= text_field_tag :first_name, nil, placeholder: "First name" %>
+      </div>
 
+      <div>
       <%= text_field_tag :last_name, nil, placeholder: "Last name" %>
+      </div>
 
       <div>
       <%= text_field_tag :email, nil, placeholder: "Email address", class: "field-check", required:true, pattern: "email"%>
@@ -23,14 +27,10 @@
       </div>
 
       <div>
-        <%= text_field_tag :password, nil, placeholder: "Password", class: "field-check", required:true, pattern: "password" %>
+        <%= password_field_tag :password, nil, placeholder: "Password", class: "field-check", required:true, pattern: "password" %>
 
           <small class="error">*This is not a valid password...</small>
       </div>
-
-        <br>
-
-
 
     <div>
       <%= label_tag :birthday, nil, class: "birthday" %><br>
@@ -38,11 +38,15 @@
     </div>
 
     <div>
-      <%= label_tag :avatar %>
+      <%= label_tag :avatar, nil, class: "avatar_label" %>
       <%= file_field_tag :avatar, class: "avatar" %>
     </div>
 
-    <%= check_box_tag 'accept', class: "check_box" %> Accept Terms
+    <%= check_box_tag 'accept', class: "check_box" %>Accept Terms
+
+      <input id="checkbox1" type="checkbox"><label for="checkbox1">Agree to Terms</label>
+   
+ 
 
 
     <%= submit_tag "Submit!", class: "submit" %>
