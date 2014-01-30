@@ -169,8 +169,8 @@ footer {
   color: $main-purple;
   text-align: center;
   width:100%;
-  position: absolute;
+  position: relative;
   clear:both;
-  bottom: 15px;
-
+  margin-top: 10px;
+  bottom: 0px;
 }
