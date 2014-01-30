@@ -36,7 +36,7 @@ $main-purple: #2E3666;
 
   input {
     background-color: #ecf0f1;
-    width: 75%;
+    width: 100%;
     height: 40px;
     margin: 0 auto;
     margin-top: 2px;
@@ -75,19 +75,26 @@ $main-purple: #2E3666;
 
     }
 
+    .avatar_label {
+      margin-left: -83%;
+      font-size: 18px;
+    }
+
     .avatar {
       border: none;
-      width: 45%;
-      font-size: 17px;
+      width: 100%;
+
     }
 
     .birthday {
-      margin-left: -60%;
-      font-size: 17px;
+      margin-left: -80%;
+      font-size: 18px;
+      margin-bottom: -10px;
     }
 
     div {
       margin: 0 auto;
+      width: 75%;
     }
 
     p {
