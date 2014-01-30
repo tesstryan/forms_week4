@@ -1,0 +1,22 @@
+<section class="user-form">
+
+  <!--   <img src="/assets/images/banner_reset.png" class="banner"> -->
+  <%= image_tag 'banner_forgot.png', :class => "reset_banner" %>
+
+  <%= form_tag(users_url, method: 'post', multipart: true, data: {abide: true}) do %>
+
+      <div>
+        <%= text_field_tag :email, nil, placeholder: "Enter your e-mail address...", class: "field-check", required:true, pattern: "email"%>
+
+        <small class="error">*Your e-mail doesnt look right...</small>
+      </div>
+
+      <p>Click submit and you'll get an e-mail from us shortly. Help is on the way!</p>
+
+    <div>
+      <%= submit_tag "Submit", class: "submit" %>
+    </div>
+  <% end %>
+
+
+</section>

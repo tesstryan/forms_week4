@@ -4,13 +4,14 @@ FormsWeek4::Application.routes.draw do
 
   root to: 'users#new'
 
-  #Routes for Signing In and Out: 
+  #Routes for Signing In and Out:
   get '/login' => 'sessions#new'
   post '/sessions', controller:'sessions', action: 'create'
   get '/logout' => 'sessions#destroy'
 
   #------------------------------
-  get '/reset' => 'forms#reset' 
+  get '/reset' => 'forms#reset'
+  get '/forgot' => 'forms#forgot'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -3,21 +3,26 @@
     <!-- <img src="https://s3.amazonaws.com/cbgriffin/banner.png" class="banner"> -->
     <%= image_tag 'banner_sign_in.png', :class => "reset_banner" %>
 
-  <%= form_tag(users_url, method: 'post') do %>
+  <%= form_tag(users_url, method: 'post', multipart: true, data: {abide: true}) do %>
 
-    <div>
-      <%= label_tag :email %><br />
-      <%= text_field_tag :email %>
-    </div>
+      <div>
+      <%= text_field_tag :email, nil, placeholder: "Email address", class: "field-check", required:true, pattern: "email"%>
 
-    <div>
-      <%= label_tag :password %><br />
-      <%= text_field_tag :password %>
-    </div>
+        <small class="error">*Your e-mail doesnt look right...</small>
+      </div>
 
-    <div>
-      <%= submit_tag "Sign In" %>
-    </div>
+      <div>
+        <%= password_field_tag :password, nil, placeholder: "Password", class: "field-check", required:true, pattern: "password" %>
+
+          <small class="error">*This is not a valid password...</small>
+      </div>
+
+      <a href="/forgot">Oops! I forgot my username or password!!</a>
+
+      <div>
+        <%= submit_tag "Sign In!", class: "submit" %>
+      </div>
+
   <% end %>
 
 
