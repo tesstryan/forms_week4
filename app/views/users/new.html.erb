@@ -27,7 +27,8 @@
       </div>
 
       <div>
-        <%= password_field_tag :password, nil, placeholder: "Password", class: "field-check", required:true, pattern: "password" %>
+  
+        <%= password_field_tag :password, nil, class: "field-check showpassword", placeholder: "Password", required:true, pattern: "alpha" %>
 
           <small class="error">*This is not a valid password...(Use a capital letter, number, and a symbol, please!)</small>
       </div>
