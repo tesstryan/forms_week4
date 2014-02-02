@@ -13,6 +13,11 @@
 
 ActiveRecord::Schema.define(version: 20140130192531) do
 
+  create_table "user_mailers", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", force: true do |t|
     t.string "first_name"
     t.string "last_name"
