@@ -53,7 +53,14 @@ $(function(){
 });
 
 
-$(function(){ $('.datepicker').pickadate(); });
+$(function(){ 
+  $('.datepicker').pickadate({
+    today: '',
+    clear: 'Clear selection',
+
+  })
+
+});
 
 
 $(function(){ $(document).foundation(); });
