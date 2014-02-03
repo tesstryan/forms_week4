@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
+//= require pickadate/picker
+ //= require pickadate/picker.date
 //= require_tree .
 
 // $(function() {
@@ -48,6 +50,9 @@ $(function(){
         ).append($("<span/>").text(" Show password")).insertAfter($input);
     });
 });
+
+
+$(function(){ $('.datepicker').pickadate(); }):
 
 $(function(){ $(document).foundation(); }):
 

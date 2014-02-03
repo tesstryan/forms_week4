@@ -35,7 +35,8 @@
 
     <div>
       <%= label_tag :birthday, nil, class: "birthday" %><br>
-      <%= date_field_tag :birthday %>
+       <!-- date_field_tag :birthday  -->
+      <%= date_field_tag :birthday , nil, placeholder: "Birthday", id: "datepicker", title: "Birthday" %>
     </div>
 
     <div class="avatar_checkbox">
@@ -54,6 +55,10 @@
 
 
     <%= submit_tag "Submit", class: "submit" %>
+
+    <br>
+
+    <%= link_to "Already signed up...", '/login' %>
 
 
   <% end %>
