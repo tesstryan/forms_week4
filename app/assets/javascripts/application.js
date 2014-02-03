@@ -15,7 +15,8 @@
 //= require foundation
 //= require turbolinks
 //= require pickadate/picker
- //= require pickadate/picker.date
+//= require pickadate/picker.date
+//= require_self
 //= require_tree .
 
 // $(function() {
@@ -52,8 +53,7 @@ $(function(){
 });
 
 
-$(function(){ $('.datepicker').pickadate(); }):
-
-$(function(){ $(document).foundation(); }):
+$(function(){ $('.datepicker').pickadate(); });
 
 
+$(function(){ $(document).foundation(); });
