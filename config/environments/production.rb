@@ -72,6 +72,9 @@ FormsWeek4::Application.configure do
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
 
+  # ADDED MODERNIZER
+  config.assets.precompile += %w( vendor/modernizr.js )
+
   # Disable automatic flushing of the log to improve performance.
   # config.autoflush_log = false
 

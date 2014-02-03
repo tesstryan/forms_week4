@@ -11,6 +11,7 @@ group :development do
 end
 
 gem 'pickadate-rails'
+gem 'foundation-rails'
 
 group :production do
   gem 'pg'
