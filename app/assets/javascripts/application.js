@@ -59,6 +59,7 @@ $(function(){
     clear: 'Clear selection',
 
   })
+  $picker.close(true);
 
 });
 
